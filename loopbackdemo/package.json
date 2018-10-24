@@ -1,0 +1,72 @@
+{
+  "name": "login",
+  "version": "0.1.0",
+  "main": "server/server.js",
+  "productName": "login",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "build-prod": "pkg -t latest-win-x64 -o ./test ./server/server.js -d",
+    "start": "node .",
+    "posttest": "npm run lint && nsp check"
+  },
+  "window": {
+    "title": "node-webkit demo",
+    "icon": "link.png",
+    "toolbar": true,
+    "frame": false,
+    "width": 800,
+    "height": 500,
+    "position": "mouse",
+    "min_width": 400,
+    "min_height": 200,
+    "max_width": 800,
+    "max_height": 600
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "compression": "^1.0.3",
+    "connect-loki": "^1.1.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.5.2",
+    "express-session": "^1.15.6",
+    "helmet": "^3.10.0",
+    "loopback": "^3.18.1",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^5.0.0",
+    "loopback-component-storage": "^3.3.1",
+    "loopback-connector-postgresql": "^3.3.2",
+    "loopback-connector-sqlite": "^1.4.5",
+    "loopback-connector-sqlite3": "^3.0.0",
+    "multer": "^1.3.0",
+    "npm": "^5.8.0",
+    "nw": "^0.33.4",
+    "random-number": "0.0.9",
+    "randomstring": "^1.1.5",
+    "serve-favicon": "^2.0.1",
+    "session-file-store": "^1.2.0",
+    "sqlite": "^3.0.0",
+    "strong-error-handler": "^2.0.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.1",
+    "electron-winstaller": "^2.7.0",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "grunt-node-webkit-builder": "^1.0.2",
+    "node-inspector": "^0.7.0",
+    "nsp": "^2.1.0",
+    "nw-builder": "^3.5.4"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "login"
+}

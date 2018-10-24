@@ -1,0 +1,19 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "inventory",
+    "password": "root",
+    "name": "db",
+    "user": "postgres",
+    "connector": "postgresql"
+  },
+  "dbsql": {
+     "file":"./server/database.sqlite",
+     "name":"dbsql",
+      "debug": true,
+     "connector": "sqlite3"
+  }
+
+}
